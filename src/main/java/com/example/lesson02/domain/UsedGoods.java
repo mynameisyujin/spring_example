@@ -2,10 +2,10 @@ package com.example.lesson02.domain;
 
 import java.util.Date;
 
-// DTO, model, domain
+// DTO, model, domain이라고도 불리는 객체
 public class UsedGoods {
-	// 필드
-	private int id;
+	// 필드 : DB에 있는 필드명들
+	private int id; // null이 허용되는 숫자인 경우 int가 못 들어감, null이 허용될 경우 Integer로! 확인하기
 	private int sellerId;
 	private String title;
 	private String description;
@@ -65,7 +65,4 @@ public class UsedGoods {
 		this.updatedAt = updatedAt;
 	}
 	
-
-	
-
 }
